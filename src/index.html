@@ -1,13 +1,42 @@
-<!DOCTYPE html>
-<html lang="uk">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GoIT · Домашнє завдання</title>
+    <meta name="description" content="Search and browse photos from Pixabay." />
+    <title>Image Search</title>
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Розмітку додавай тут за технічним завданням -->
+    <header class="page-header">
+      <div class="container">
+        <h1 class="page-title">Image Search</h1>
+
+        <form class="search-form" autocomplete="off">
+          <label class="visually-hidden" for="search-input">
+            Search images
+          </label>
+          <input
+            class="search-input"
+            id="search-input"
+            type="text"
+            name="searchQuery"
+            placeholder="Search images..."
+            required
+          />
+          <button class="search-button" type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="container page-main">
+      <ul class="gallery"></ul>
+
+      <button class="load-more" type="button">Load more</button>
+
+      <span class="loader" role="status" aria-label="Loading images"></span>
+    </main>
 
     <script type="module" src="./main.js"></script>
   </body>
