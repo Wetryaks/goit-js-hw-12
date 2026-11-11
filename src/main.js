@@ -14,7 +14,7 @@ import {
 const END_OF_RESULTS_MESSAGE =
   "We're sorry, but you've reached the end of search results.";
 
-const form = document.querySelector('.search-form');
+const form = document.querySelector('.form');
 const gallery = document.querySelector('.gallery');
 const loadMoreButton = document.querySelector('.load-more');
 
